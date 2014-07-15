@@ -23,7 +23,7 @@ development:
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: markw
+  username: markwigg
   password: beachbum
   host: localhost
 
