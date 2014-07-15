@@ -1,0 +1,24 @@
+Rake::Task[:production].invoke
+
+web463.webfaction.com
+
+# set :recipient, "ruby"
+
+
+server "localhost", :web
+set :user, "deployer"
+
+
+task :hello do
+  puts "hello #{fetch(:recipient, 'me')}"  #me is default
+
+  execute "echo 'Hello World' > ~/hello"
+
+  #invoke :goodbye
+end
+
+task :goodbye do
+  puts "goodbye"
+end
+
+after :hello, :goodbye

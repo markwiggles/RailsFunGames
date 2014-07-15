@@ -16,7 +16,6 @@ role :db, %w{markwigg@web463.webfaction.com}
 # used to set extended properties on the server.
 
 server 'web463.webfaction.com', user: 'markwigg', roles: %w{web app} #, my_property: :my_value
-
 set :password, ask('Server password', nil)
 
 # Custom SSH Options
@@ -27,15 +26,16 @@ set :password, ask('Server password', nil)
 # Global options
 # --------------
 set :ssh_options, {
-    forward_agent: false,
-
-    # keys: %w(file:///C:/ssh/id_dsa),
-    # auth_methods: %w(publickey password)
-
-    auth_methods: %w(password),
-    user: 'markwigg',
-    password: "#{fetch(:password)}"
+    forward_agent: true,
+    keys: %w(file:///F:/Dropbox/ssh/id_dsa.ppk"),
+    auth_methods: %w(publickey)
 }
+
+#     auth_methods: %w(password),
+#     user: 'markwigg',
+#     password: "#{fetch(:password)}"
+# }
+
 #
 # And/or per server (overrides global)
 # ------------------------------------
