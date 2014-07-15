@@ -26,15 +26,15 @@ set :password, ask('Server password', nil)
 # Global options
 # --------------
 set :ssh_options, {
-    forward_agent: true,
-    keys: %w(file:///F:/Dropbox/ssh/id_dsa.ppk"),
-    auth_methods: %w(publickey)
-}
-
-#     auth_methods: %w(password),
-#     user: 'markwigg',
-#     password: "#{fetch(:password)}"
+#     user: "#{fetch(:user)}",
+#     forward_agent: false,
+#     keys: %w(file:///F:/ssh/id_dsa.ppk"),
+#     auth_methods: %w(publickey)
 # }
+    auth_methods: %w(password),
+    user: "#{fetch(:user)}",
+    password: "#{fetch(:password)}"
+}
 
 #
 # And/or per server (overrides global)

@@ -28,7 +28,6 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    bcrypt (3.1.7)
     bcrypt (3.1.7-x86-mingw32)
     builder (3.2.2)
     capistrano (3.2.1)
@@ -129,9 +128,8 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
-  capistrano (~> 3.2.0)
-  capistrano-bundler (~> 1.1)
-  capistrano-rails (~> 1.1)
+  capistrano (~> 3.2.1)
+  capistrano-rails
   jbuilder (~> 2.0)
   jquery-rails
   mysql2

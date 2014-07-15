@@ -34,16 +34,16 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'capistrano', '~> 3.2.0'
-gem 'capistrano-rails', '~> 1.1'
-gem 'capistrano-bundler', '~> 1.1'
+# gem 'capistrano', '~> 3.2.0'
+# gem 'capistrano-rails', '~> 1.1'
+# gem 'capistrano-bundler', '~> 1.1'
 
 # Use unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-# gem 'capistrano', '~> 3.2.1'
+gem 'capistrano-rails', group: :development
+gem 'capistrano', '~> 3.2.1'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
