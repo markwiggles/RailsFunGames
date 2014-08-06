@@ -1,0 +1,88 @@
+
+#book {
+    height: 100%;
+    width: 100%;
+}
+#color-menu {
+    width: 1024px;
+    height:680px;   
+}
+#refresh {
+    left:730px;
+}
+
+#container {
+    width: 774px;
+    height: 680px;
+    margin: 0;
+    float: left;
+    background-color: white;
+}
+.rocket {
+    background-image: url(../images/stars.jpg);
+    background-repeat:repeat;
+}
+.cowboy {
+    background-image: url(../images/cowboy_bg.png);
+}
+.flower {
+    background-image: url(../images/flower_bg.png);
+}
+.dino {
+    background-image: url(../images/dino_bg.png);
+}
+.soccer {
+    background-image: url(../images/park_bg.png);
+    background-size:cover;
+}
+
+
+#color-header {
+    position: absolute;
+    top: 0;
+    left: 320px;
+    height: 95px;
+}
+.color-thumb {
+    position: absolute;
+    width: 100px;
+}
+.color-thumb:hover {
+    height:150px;
+    width:auto;
+}
+
+
+#flowerthumb {
+    top: 140px;
+    left: 330px;
+}
+#rocketthumb {
+    top: 360px;
+    left: 350px;
+}
+#soccerthumb {
+    top: 360px;
+    left: 180px;
+}
+#cowboythumb {
+    top: 140px;
+    left: 590px;
+}
+#dinothumb {
+    top: 360px;
+    left: 640px;
+}
+
+
+#colors {
+    float: right;
+    width:250px;
+    height: 680px;
+}
+
+
+#drawing {
+    display: none;
+}
+

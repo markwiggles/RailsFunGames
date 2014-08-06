@@ -1,0 +1,113 @@
+/* 
+    Document   : main-styles
+    Created on : 14/04/2014, 1:39:36 PM
+    Author     : Mark
+    Description:
+        styles shared across activities
+*/
+
+root { 
+    display: block;
+}
+
+html {
+    font-size: 16px;
+    background-image:url('../images/wave.jpg');
+    font-family: "Comic Sans MS", MarkerFelt-Thin, sans-serif;
+    background-repeat:repeat;
+}
+
+#outer-wrapper {
+    width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+}
+
+header img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+#content {
+    width: 1024px;
+    min-height: 680px;
+    position: relative;
+    background-image:url('../images/tile.png');
+    background-repeat:repeat;
+}
+
+#container {
+    width: 1024px;
+    height: 620px;
+}
+
+#back, #refresh, #home ,#act-home {
+    position: absolute;
+    height: 50px !important;
+    width: 50px !important;
+    z-index: 99;
+    opacity: 1;
+}
+#back, #refresh {
+    display: none;
+}
+
+#home img, #act-home img {
+    height: 51px !important;
+    padding: 0;
+    margin:0 !important;
+}
+#home, #act-home {
+    top: 5px;
+}
+#home {
+    left: 5px;
+}
+#act-home {
+    left: 60px;
+}
+
+
+#skip {
+    position: absolute;
+    top: 540px;
+    left: 880px;
+    height: 80px;
+}
+#skip:hover {
+    cursor: pointer;
+}
+
+#back {
+    left: 5px;
+}
+#refresh {
+    left: 960px;
+}
+
+
+#back:hover, #refresh:hover, #skip:hover, #home:hover,#act-home:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.nav {
+    opacity: 1;
+}
+
+.nav:hover {
+    box-shadow: 0 5px 15px 10px rgba(255,255,5,0.7);
+    -moz-box-shadow: 0 5px 15px 10px rgba(255,255,5,0.7);;
+    -webkit-box-shadow: 0 5px 15px 10px rgba(255,255,5,0.7);
+    cursor: pointer;
+}
+
+.nav:active {
+    cursor: pointer;
+}
+
+.loading {
+    background-image: url('../img/ajax-loader.gif');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 50% 5%; 
+}
