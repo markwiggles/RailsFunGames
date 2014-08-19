@@ -12,7 +12,7 @@ root {
 
 html {
     font-size: 16px;
-    background-image:url('../images/wave.jpg');
+    background-image:url('../assets/wave.jpg');
     font-family: "Comic Sans MS", MarkerFelt-Thin, sans-serif;
     background-repeat:repeat;
 }
