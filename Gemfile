@@ -22,6 +22,8 @@ gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem 'sprockets', '~> 2.12.1'
 gem 'twitter-bootstrap-rails'
 
+gem 'commonjs', '~> 0.2.7'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
