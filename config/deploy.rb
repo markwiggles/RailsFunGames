@@ -37,8 +37,9 @@ set :pty, true
 namespace :deploy do
   desc "Restart nginx"
   task :restart do
-    run "./bin/restart"
+    run "~/home/markwigg/webapps/railsfungames/bin/restart"
   end
+
 
 end
 
