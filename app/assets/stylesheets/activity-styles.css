@@ -16,10 +16,6 @@ html {
 
 }
 
-#image-bg {
-    position: fixed; top: 0; left: 0; }
-.bgwidth { width: 100%; }
-.bgheight { height: 100%; }
 
 #outer-wrapper {
     width: 1024px;

@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+/*background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/jess-lake.jpg');*/
+/*background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+/*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/jess-lake.jpg');*/
+html {
+    background-image: url('/assets/jess-lake.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    /*Add the browser prefixed CSS first:*/
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    /*Then add the CSS property:*/
+
+    background-size: cover;
+}
