@@ -160,6 +160,7 @@ DEPENDENCIES
   capistrano (~> 3.2.1)
   capistrano-rails
   coffee-rails (~> 4.0.0)
+  commonjs (~> 0.2.7)
   jbuilder (~> 2.0)
   jquery-rails
   less-rails

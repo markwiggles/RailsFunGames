@@ -12,10 +12,14 @@ root {
 
 html {
     font-size: 16px;
-    background-image:url('../assets/wave.jpg');
     font-family: "Comic Sans MS", MarkerFelt-Thin, sans-serif;
-    background-repeat:repeat;
+
 }
+
+#image-bg {
+    position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
 
 #outer-wrapper {
     width: 1024px;
