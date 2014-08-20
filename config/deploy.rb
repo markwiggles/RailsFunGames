@@ -35,25 +35,11 @@ set :pty, true
 # set :keep_releases, 5
 
 namespace :deploy do
-
-  desc 'Restart application'
+  desc "Restart nginx"
   task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
-
-    end
-  end
-
-  after :publishing, :restart
-
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
-    end
+    run "#{:deploy_to}/bin/restart"
   end
 
 end
+
+
