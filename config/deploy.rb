@@ -37,7 +37,7 @@ set :pty, true
 namespace :deploy do
   desc "Restart nginx"
   task :restart do
-    run "#{:deploy_to}/bin/restart"
+    run "./bin/restart"
   end
 
 end
